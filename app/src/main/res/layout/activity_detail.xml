@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- POSTER -->
+        <ImageView
+            android:id="@+id/imgDetail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avengers"/>
+
+        <!-- JUDUL -->
+        <TextView
+            android:id="@+id/txtDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avengers Endgame"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <!-- GENRE -->
+        <TextView
+            android:id="@+id/txtDetailGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action"
+            android:textColor="#BBBBBB"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- RATING -->
+        <TextView
+            android:id="@+id/txtDetailRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐ 8.9"
+            android:textColor="#FFD700"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- DESKRIPSI -->
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi film..."
+            android:textColor="#DDDDDD"
+            android:textSize="15sp"
+            android:layout_marginTop="14dp"/>
+
+        <!-- PILIH JAM -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Jam Tayang"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FFFFFF"/>
+
+        <!-- STUDIO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Studio"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioStudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regular"
+                android:textColor="#FFFFFF"/>
+
+            <RadioButton
+                android:id="@+id/rbIMAX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMAX"
+                android:textColor="#FFFFFF"/>
+        </RadioGroup>
+
+        <!-- SNACK -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambahan Snack"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"/>
+
+        <CheckBox
+            android:id="@+id/checkPopcorn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popcorn"
+            android:textColor="#FFFFFF"/>
+
+        <CheckBox
+            android:id="@+id/checkDrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soft Drink"
+            android:textColor="#FFFFFF"/>
+
+        <!-- PILIH KURSI -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Kursi"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:layout_marginTop="10dp">
+
+            <ToggleButton
+                android:id="@+id/seatA1"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:textOn="A1"
+                android:textOff="A1"
+                android:text="A1"/>
+
+            <ToggleButton
+                android:id="@+id/seatA2"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:textOn="A2"
+                android:textOff="A2"
+                android:text="A2"/>
+
+            <ToggleButton
+                android:id="@+id/seatA3"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:textOn="A3"
+                android:textOff="A3"
+                android:text="A3"/>
+
+            <ToggleButton
+                android:id="@+id/seatB1"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:textOn="B1"
+                android:textOff="B1"
+                android:text="B1"/>
+
+            <ToggleButton
+                android:id="@+id/seatB2"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:textOn="B2"
+                android:textOff="B2"
+                android:text="B2"/>
+
+            <ToggleButton
+                android:id="@+id/seatB3"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:textOn="B3"
+                android:textOff="B3"
+                android:text="B3"/>
+
+        </GridLayout>
+
+        <!-- BUTTON IMDB -->
+        <Button
+            android:id="@+id/btnImdb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌐 View on IMDb"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F5C518"
+            android:layout_marginTop="20dp"/>
+
+        <!-- BUTTON NETFLIX -->
+        <Button
+            android:id="@+id/btnNetflix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎬 Watch on Netflix"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#E50914"
+            android:layout_marginTop="10dp"/>
+
+        <!-- BUTTON -->
+        <Button
+            android:id="@+id/btnBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesan Tiket"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#E50914"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</ScrollView>
